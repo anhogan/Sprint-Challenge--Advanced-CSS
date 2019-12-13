@@ -5,13 +5,12 @@ nav {
   background: @nav-bg;
   border: 1px solid @nav-border;
   margin-top: 2%;
-  height: 10vh;
+  height: 12vh;
 
   @media @phone {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    height: 12vh;  
   }
 
   .navbar {
@@ -22,6 +21,10 @@ nav {
       color: @header-font-color;
       font-size: 3.5rem;
       margin-top: 1%;
+
+      @media @phone {
+        margin-top: 2%;
+      }
     }
 
     .nav-items {
