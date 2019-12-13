@@ -1,1 +1,18 @@
 // Mixins Here
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roundedCorners {
+  border: 1px solid @main-border-color;
+  border-radius: 10px;
+}
+
+.signUpButton (@bgcolor, @textSize) {
+  .roundedCorners();
+  background: @bgcolor;
+  font-size: @textSize;
+  text-align: center;
+}

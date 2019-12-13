@@ -1,1 +1,33 @@
 // Navigation code here
+nav {
+  width: 95%;
+  margin: 0 auto;
+  background: @nav-bg;
+  border: 1px solid @nav-border;
+  margin-top: 2%;
+  height: 10vh;
+
+  .navbar {
+    .flex();
+    flex-direction: column;
+  
+    h1 {
+      color: @header-font-color;
+      font-size: 3.5rem;
+      margin-top: 1%;
+    }
+
+    .nav-items {
+      width: 40%;
+      .flex();
+      justify-content: space-between;
+      margin-top: 1%;
+
+      a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
