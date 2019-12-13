@@ -170,11 +170,12 @@ p {
   margin: 0 auto;
 }
 nav {
+  position: fixed;
   width: 95%;
-  margin: 0 auto;
+  margin: 0 2.5%;
   background: #F6F6F6;
+  opacity: 0.9;
   border: 1px solid #F1F1F1;
-  margin-top: 2%;
   height: 12vh;
 }
 @media (max-width: 500px) {
@@ -228,6 +229,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 82px;
 }
 .home .intro img {
   border: 1px solid #dee2e6;
