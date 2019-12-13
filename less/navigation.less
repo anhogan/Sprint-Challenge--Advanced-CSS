@@ -7,6 +7,13 @@ nav {
   margin-top: 2%;
   height: 10vh;
 
+  @media @phone {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: 12vh;  
+  }
+
   .navbar {
     .flex();
     flex-direction: column;
@@ -22,6 +29,11 @@ nav {
       .flex();
       justify-content: space-between;
       margin-top: 1%;
+
+      @media @phone {
+        width: 75%;
+        margin-top: 3%;
+      }
 
       a {
         text-decoration: none;

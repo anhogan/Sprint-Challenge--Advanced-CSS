@@ -177,6 +177,14 @@ nav {
   margin-top: 2%;
   height: 10vh;
 }
+@media (max-width: 500px) {
+  nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: 12vh;
+  }
+}
 nav .navbar {
   display: flex;
   justify-content: center;
@@ -195,6 +203,12 @@ nav .navbar .nav-items {
   align-items: center;
   justify-content: space-between;
   margin-top: 1%;
+}
+@media (max-width: 500px) {
+  nav .navbar .nav-items {
+    width: 75%;
+    margin-top: 3%;
+  }
 }
 nav .navbar .nav-items a {
   text-decoration: none;
@@ -267,6 +281,15 @@ footer {
   width: 30%;
   height: 35px;
   padding: 1.5%;
+}
+.home .walk .walk-text .btn:hover {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background: #F6F7F8;
+  color: #22283A;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
