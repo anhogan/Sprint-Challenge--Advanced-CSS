@@ -5,7 +5,7 @@
 }
 .roundedCorners {
   border: 1px solid #dee2e6;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -210,6 +210,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
