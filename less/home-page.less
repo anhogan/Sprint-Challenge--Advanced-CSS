@@ -1,8 +1,12 @@
 // Home Content
 
 .home {
-
   .intro {
+    padding-top: 82px;
+
+    img {
+      .roundedCorners();
+    }
 
     h2 {
       padding: 15px;
@@ -18,6 +22,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .sky {
+        display: none;
+      }
+  
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +64,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      margin-top: 25px;
+      padding: 3%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        margin-top: 3%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +87,33 @@
       }
 
       .btn {
+        .roundedCorners();
+        .signUpButton(@btn-bg-color, @porcelain, 1.8rem);
+        width: 30%;
+        height: 35px;
+        padding: 1.5%;
+
+        @media @phone {
+          width: 100%;
+          height: 75px;
+          padding: 6%;
+        }
+
+        &:hover {
+          .signUpButton(@porcelain, @btn-bg-color, 1.8rem);
+          cursor: pointer;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+      }
       
       img {
         width: 100%;

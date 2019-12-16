@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website uses multiple fixed breakpoints to change styling, but has styles hardcoded in pixels so the format doesn’t change until you hit a breakpoint. Fully responsive websites are hardcoded with percentages and maximums so they adjust as you move regardless of whether you’ve hit a hard breakpoint.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop-first is styled for the desktop and then uses max-width media queries to move the screen down to smaller sizes. Mobile-first is styled for mobile and then uses min-width media queries to move the screen up in size.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Font-size: 62.5% sets the default font size to 10px (16px * 62.5% = 10px) to make styling using rem an easy calculation.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is an expansion of the standard CSS syntax that allows us to nest elements inside of one another and standardize styles that are used in multiple places. A separate file is used to create the syntax, then that sheet gets compiled into the standard CSS to be read by the browser.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting. It makes the CSS read like the HTML and takes out the confusion of how to reference a specific element. It also helps visually break down the specificity of an element and, as a visual learner, this is very helpful! The concepts are fairly straightforward but I have struggled this week with getting my media queries in the right place for them to take effect on the desired element.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
